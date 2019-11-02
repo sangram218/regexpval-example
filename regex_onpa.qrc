@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="background">
+    <file>1280x720xGrad.img</file>
+    <file>1280x720xTeal.img</file>
+  </qresource>
+</RCC>

@@ -8,12 +8,12 @@ A simple regular expression validator which looks, feels and works good
 4. Give stars to the repository if it was helpful
 
 ## To-do
-- [ ] Validator function for first name
-- [ ] Validator function for last name
-- [X] Validator function for phone number
-- [X] Validator function for email address
-- [ ] Strength evaluator for password
-- [ ] Validator function for security PIN
+- [X] Validator function for first name (Length specified)
+- [X] Validator function for last name (Length specified)
+- [X] Validator function for phone number (Length specified)
+- [X] Validator function for email address (Length NOT specified)
+- [ ] Strength evaluator for password (Length NOT specified)
+- [X] Validator function for security PIN (Length NOT specified)
 
 ## Screenshots
 _I will be posting them in a while_

@@ -15,13 +15,27 @@ def vld_phnum(strpiece):
         return 0
 
 def vld_fname(strpiece):
-    return 1
+    regex = "^[A-Z]{3,20}$"
+    strpiece = strpiece.upper()
+    if re.search(regex, strpiece):
+        return 1
+    else:
+        return 0
 
 def vld_lname(strpiece):
-    return 1
+    regex = "^[A-Z]{3,20}$"
+    strpiece = strpiece.upper()
+    if re.search(regex, strpiece):
+        return 1
+    else:
+        return 0
 
 def vld_sepin(strpiece):
-    return 1
+    regex = '^[0-9]{6}$'
+    if re.search(regex, strpiece):
+        return 1
+    else:
+        return 0
 
 def vld_paswd(strpiece):
     return 1

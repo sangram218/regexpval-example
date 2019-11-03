@@ -13,7 +13,7 @@ A simple regular expression validator which looks, feels and works good
 - [X] Validator function for phone number (Length specified)
 - [X] Validator function for email address (Length NOT specified)
 - [ ] Strength evaluator for password (Length NOT specified)
-- [X] Validator function for security PIN (Length NOT specified)
+- [X] Validator function for security PIN (Length specified)
 
 ## Screenshots
 _I will be posting them in a while_

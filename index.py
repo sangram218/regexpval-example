@@ -45,6 +45,7 @@ class MainApp(QMainWindow,ui):
         self.spemp = "The PIN cannot be empty."
         self.errar = [self.fnerr, self.lnerr, self.pnerr, self.emerr, self.pwerr, self.sperr]
         self.empar = [self.fnemp, self.lnemp, self.pnemp, self.ememp, self.pwemp, self.spemp]
+        self.pwsen = ["INVALID","WEAK", "MEDIUM", "STRONG"]
         self.acmsg = ""
         self.title = "Regular Expression Validator Example v0.01 by t0xic0der"
         self.setupUi(self)
@@ -90,9 +91,15 @@ class MainApp(QMainWindow,ui):
                     if array[i]==0:
                         self.acmsg=self.acmsg+self.errar[i]+"\n"
                 warn = QMessageBox.information(self, self.ertit, self.acmsg, QMessageBox.Ok)
-            else:
-                warn = QMessageBox.information(self, self.sctit, self.scmsg, QMessageBox.Ok)
-        print(emche)
+            elif array==[1,1,1,1,1,1]:
+                self.acmsg = self.scmsg + "\n\n" + self.pwstr + self.pwsen[1]
+                warn = QMessageBox.information(self, self.sctit, self.acmsg, QMessageBox.Ok)
+            elif array==[1,1,1,1,2,1]:
+                self.acmsg = self.scmsg + "\n\n" + self.pwstr + self.pwsen[2]
+                warn = QMessageBox.information(self, self.sctit, self.acmsg, QMessageBox.Ok)
+            elif array==[1,1,1,1,3,1]:
+                self.acmsg = self.scmsg + "\n\n" + self.pwstr + self.pwsen[3]
+                warn = QMessageBox.information(self, self.sctit, self.acmsg, QMessageBox.Ok)
 
 def main():
     app=QApplication(sys.argv)

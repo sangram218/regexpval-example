@@ -1,5 +1,6 @@
 # regexpval-example
-Version 0.03
+Version 0.04
+
 A simple regular expression validator which looks, feels and works good
 
 ## Usage
@@ -15,17 +16,19 @@ A simple regular expression validator which looks, feels and works good
 - [X] Validator function for email address (Length NOT specified)
 - [ ] Strength evaluator for password (Length NOT specified)
 - [X] Validator function for security PIN (Length specified)
-- [ ] Add masking in the password field
-- [ ] Add masking in the security PIN field
+- [X] Add masking in the password field
+- [X] Add masking in the security PIN field
+- [X] Correct the tab order for fields
 
 ## Screenshots
+* Window 
 ![Window](regexpval-main.png)
+* Message for failed validation due to empty string 
 ![Message for failed validation due to empty string](regexpval-emty.png)
+* Message for failed validation due to illegal characters 
 ![Message for failed validation due to illegal characters](regexpval-fail.png)
+* Message for successful validation 
 ![Message for successful validation](regexpval-succ.png)
-
-## Contribute
-Clone, add, build and make a PR. You know the drill.
 
 ## Changelog
 ### v0.01
@@ -43,11 +46,14 @@ Clone, add, build and make a PR. You know the drill.
 2. Added warning messages for empty strings
 3. Added length constraints for first name and last name
 
-### v0.04 (Oncoming)
+### v0.04 (Current)
 1. Provided masking for password and security PIN fields
-2. Perform codebase cleanup for unnecessary dependencies
-3. Added password strength evaluator function
+2. Added length constraints for phone number and security PIN
+3. Fixed tab shifting order of fields in GUI
 
 ### v0.05 (Oncoming)
-1. Fix tab shifting of fields in GUI
-2. Added length constraints for phone number and security PIN
+1. Added password strength evaluator function
+2. Performed codebase cleanup for unnecessary dependencies
+
+## Contribute
+Clone, add, build and make a PR. You know the drill.

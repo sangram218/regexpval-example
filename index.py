@@ -10,16 +10,33 @@ class MainApp(QMainWindow,ui):
     def __init__(self):
         QMainWindow.__init__(self)
         self.sctit = "Validation completed with SUCCESS"
-        self.scmsg = "Congratulations for all the valid information you gave here! Now we will sell this information to third party websites at huge prices!"
+        self.scmsg = "Congratulations for all the valid information you gave here! "+\
+                     "Now we will sell this information to third party websites at huge prices!"
         self.pwstr = "Password strength : "
         self.ertit = "Validation completed with FAILURE"
         self.ermsg = "We could not store your information due to the following issues. \nCorrect them and try again!"
-        self.fnerr = "The first name consists of illegal characters. Only alphabets and symbols like - are allowed in this field."
-        self.lnerr = "The last name consists of illegal characters. Only alphabets and symbols like - are allowed in this field."
-        self.pnerr = "The phone number consists of illegal characters. Only numbers and symbols like + and - are allowed in this field."
-        self.emerr = "The email address consists of illegal characters. Only alphanumeric characters and valid email symbols are allowed in this field."
-        self.pwerr = "The password consists of illegal characters. Only alphanumeric characters and valid password symbols are allowed in this field."
-        self.sperr = "The PIN field consists of illegal characters Only numbers are allowed in this field."
+        self.fnerr = "FIRST NAME\n"+\
+                     " * The first name consists of illegal characters.\n"+\
+                     " * Only alphabets are allowed in this field.\n"+\
+                     " * The min length is 3 and max length is 20.\n"
+        self.lnerr = "LAST NAME\n"+\
+                     " * The last name consists of illegal characters.\n"+\
+                     " * Only alphabets are allowed in this field.\n"+\
+                     " * The min length is 3 and max length is 20.\n"
+        self.pnerr = "PHONE NUMBER\n"+\
+                     " * The phone number consists of illegal characters.\n"+\
+                     " * Only numbers and plus symbols are allowed in this field.\n"+\
+                     " * The min length is 13 and max length is 14.\n"
+        self.emerr = "EMAIL ADDRESS\n"+\
+                     " * The email address consists of illegal characters.\n"+\
+                     " * Only alphanumeric and email symbols are allowed here.\n"
+        self.pwerr = "PASSWORD\n"+\
+                     " * The password consists of illegal characters.\n"+\
+                     " * Only alphanumeric and password symbols are allowed here.\n"
+        self.sperr = "SECURITY PIN\n"+\
+                     " * The PIN field consists of illegal characters.\n"+\
+                     " * Only numbers are allowed in this field.\n"+\
+                     " * The length should be exactly 6 characters.\n"
         self.fnemp = "The first name cannot be empty."
         self.lnemp = "The last name cannot be empty."
         self.pnemp = "The phone number cannot be empty."
@@ -68,10 +85,10 @@ class MainApp(QMainWindow,ui):
         else:
             array = self.activity(attrs[0],attrs[1],attrs[2],attrs[3],attrs[4],attrs[5])
             if 0 in array:
-                self.acmsg=self.ermsg+"\n"
+                self.acmsg=self.ermsg+"\n\n"
                 for i in range(6):
                     if array[i]==0:
-                        self.acmsg=self.acmsg+" * "+self.errar[i]+"\n"
+                        self.acmsg=self.acmsg+self.errar[i]+"\n"
                 warn = QMessageBox.information(self, self.ertit, self.acmsg, QMessageBox.Ok)
             else:
                 warn = QMessageBox.information(self, self.sctit, self.scmsg, QMessageBox.Ok)

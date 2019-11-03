@@ -173,6 +173,9 @@ color:rgba(0,0,0,1);</string>
 border-radius:15px;
 color:rgba(255,255,255,1);</string>
       </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QLineEdit" name="box_sepin">
       <property name="geometry">
@@ -192,6 +195,12 @@ color:rgba(255,255,255,1);</string>
        <string notr="true">background-color:rgba(0,64,64,0.5);
 border-radius:15px;
 color:rgba(255,255,255,1);</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="lab_passwd">
@@ -241,6 +250,15 @@ color:rgba(0,0,0,1);</string>
        <string notr="true">background-color:rgba(0,64,64,0.5);
 border-radius:15px;
 color:rgba(255,255,255,1);</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="lab_sepin">
@@ -320,6 +338,9 @@ color:rgba(0,0,0,1);</string>
 border-radius:15px;
 color:rgba(255,255,255,1);</string>
       </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QLineEdit" name="box_fname">
       <property name="geometry">
@@ -339,6 +360,9 @@ color:rgba(255,255,255,1);</string>
        <string notr="true">background-color:rgba(0,64,64,0.5);
 border-radius:15px;
 color:rgba(255,255,255,1);</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="lab_fname">
@@ -421,6 +445,9 @@ color:rgba(0,0,0,1);</string>
 border-radius:15px;
 color:rgba(255,255,255,1);</string>
       </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
      </widget>
     </widget>
     <widget class="QLabel" name="lav_intel">
@@ -474,6 +501,15 @@ color:rgba(0,0,0,1);</string>
    <zorder>man_frema</zorder>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>box_fname</tabstop>
+  <tabstop>box_lname</tabstop>
+  <tabstop>box_phnum</tabstop>
+  <tabstop>box_email</tabstop>
+  <tabstop>box_paswd</tabstop>
+  <tabstop>box_sepin</tabstop>
+  <tabstop>btn_valid</tabstop>
+ </tabstops>
  <resources>
   <include location="regex_onpa.qrc"/>
  </resources>

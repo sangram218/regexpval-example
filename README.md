@@ -54,6 +54,7 @@ A simple regular expression validator which looks, feels and works good
 ### v0.05 (Oncoming)
 1. Added password strength evaluator function
 2. Performed codebase cleanup for unnecessary dependencies
+3. Added clear button for fields
 
 ## Contribute
 Clone, add, build and make a PR. You know the drill.

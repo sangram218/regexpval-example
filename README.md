@@ -33,8 +33,8 @@ A simple regular expression validator which looks, feels and works good
 ![Message for successful validation](regexpval-succ.png)
 * Message for successful validation with password strength WEAK (v0.05 onwards)
 ![Message for successful validation with password strength WEAK](regexpval-weak.png)
-* Message for successful validation with password strenght MEDIUM (v0.05 onwards)
-![Message for successful validation with password strenght MEDIUM](regexpval-mdum.png)
+* Message for successful validation with password strength MEDIUM (v0.05 onwards)
+![Message for successful validation with password strength MEDIUM](regexpval-mdum.png)
 
 
 ## Changelog

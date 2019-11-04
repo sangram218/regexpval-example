@@ -1,5 +1,5 @@
 # regexpval-example
-Version 0.04
+Version 0.05
 
 A simple regular expression validator which looks, feels and works good
 
@@ -21,14 +21,21 @@ A simple regular expression validator which looks, feels and works good
 - [X] Correct the tab order for fields
 
 ## Screenshots
-* Window 
+* Window (all versions)
 ![Window](regexpval-main.png)
-* Message for failed validation due to empty string 
+* Message for failed validation due to empty string (all versions)
 ![Message for failed validation due to empty string](regexpval-emty.png)
-* Message for failed validation due to illegal characters 
+* Message for failed validation due to illegal characters (till v0.04)
 ![Message for failed validation due to illegal characters](regexpval-fail.png)
-* Message for successful validation 
+* Message for failed validation due to illegal characters (v0.05 onwards)
+![Message for failed validation due to illegal characters](regexpval-fail2.png)
+* Message for successful validation (till v0.04)
 ![Message for successful validation](regexpval-succ.png)
+* Message for successful validation with password strength WEAK (v0.05 onwards)
+![Message for successful validation with password strength WEAK](regexpval_weak.png)
+* Message for successful validation with password strenght MEDIUM (v0.05 onwards)
+![Message for successful validation with password strenght MEDIUM](regexpval_mdum.png)
+
 
 ## Changelog
 ### v0.01
@@ -46,15 +53,23 @@ A simple regular expression validator which looks, feels and works good
 2. Added warning messages for empty strings
 3. Added length constraints for first name and last name
 
-### v0.04 (Current)
+### v0.04
 1. Provided masking for password and security PIN fields
 2. Added length constraints for phone number and security PIN
 3. Fixed tab shifting order of fields in GUI
 
-### v0.05 (Oncoming)
-1. Added password strength evaluator function
+### v0.05 (Current)
+1. Added password strength evaluator function for WEAK and MEDIUM strengths
+2. Added password strength message in successful input
+3. Added clear buttons for all the fields
+
+### v0.06 (Oncoming)
+1. Fixed password strength evaluator function for HARD strength
 2. Performed codebase cleanup for unnecessary dependencies
-3. Added clear button for fields
+3. Optimise codebase for quick launch and speed
+
+## Bugs
+1. Password strength HARD __cannot__ be achieved as of 4th Nov 2019 (v0.05)
 
 ## Contribute
 Clone, add, build and make a PR. You know the drill.

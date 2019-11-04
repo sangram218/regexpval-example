@@ -47,7 +47,7 @@ class MainApp(QMainWindow,ui):
         self.empar = [self.fnemp, self.lnemp, self.pnemp, self.ememp, self.pwemp, self.spemp]
         self.pwsen = ["INVALID","WEAK", "MEDIUM", "STRONG"]
         self.acmsg = ""
-        self.title = "Regular Expression Validator Example v0.01 by t0xic0der"
+        self.title = "Regular Expression Validator Example v0.05 by t0xic0der"
         self.setupUi(self)
         self.handle_elements()
 
@@ -111,3 +111,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

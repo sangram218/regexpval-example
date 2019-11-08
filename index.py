@@ -32,7 +32,10 @@ class MainApp(QMainWindow,ui):
                      " * Only alphanumeric and email symbols are allowed here.\n"
         self.pwerr = "PASSWORD\n"+\
                      " * The password consists of illegal characters.\n"+\
-                     " * Only alphanumeric and password symbols are allowed here.\n"
+                     " * Only alphanumeric and password symbols are allowed here.\n"+\
+                     " * The password should NOT be ONLY alphabets\n"+\
+                     " * The password should NOT be ONLY numbers\n"+\
+                     " * The password should NOT be ONLY symbols\n"
         self.sperr = "SECURITY PIN\n"+\
                      " * The PIN field consists of illegal characters.\n"+\
                      " * Only numbers are allowed in this field.\n"+\
